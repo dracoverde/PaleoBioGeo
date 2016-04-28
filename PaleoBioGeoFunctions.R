@@ -1,7 +1,7 @@
 library("BioGeoBEARS")
-library("pygplates")
 library("paleobioDB")
-library("rpython")
+library("rpython") # will need python and pygplates installed on computer
+#pygplates is the python version of GPlates
 
 coord <- function() {
   # import locality coordinates to pygplates
@@ -20,4 +20,9 @@ paleocoord <- function() {
 
 # how might I use spreading rates?
 
-# include functions "strap", "geoscale", or other such fossil and paleo packages? (including "paleoDB)
+# include functions from "strap", "geoscale", or other such fossil and paleo packages? (including "paleoDB")
+
+read_areas_allowed_fn()
+read_times_fn()
+read_distances_fn()
+tipranges()
