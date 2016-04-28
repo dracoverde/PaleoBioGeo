@@ -1,15 +1,19 @@
 library("BioGeoBEARS")
 library("paleobioDB")
-library("rpython") # will need python and pygplates installed on computer
-#pygplates is the python version of GPlates
+library("rpython") 
+# will need python and pygplates installed on computer
+# pygplates is the python version of GPlates
 
-coord <- function() {
+locality.coord <- function() {
   # import locality coordinates to pygplates
+  # looks like I need to have a file in GMT format (can just use a .txt file and change suffix)
   
 }
 
 paleocoord <- function() {
   # generate paleocoordinates in pygplates according to ages of samples
+  # looks like gplates generates coordinates for each location along 1 My intervals
+  # pygplates will save in GMT format, can I save into other formats here? DO I even need to?
 }
   
   
@@ -25,5 +29,7 @@ paleocoord <- function() {
 read_areas_allowed_fn()
 read_times_fn()
 read_distances_fn()
+define_tipranges_object()
+getareas_from_tipranges_object()
 tipranges_to_area_strings()
 tipranges_to_tip_condlikes_of_data_on_each_state()
