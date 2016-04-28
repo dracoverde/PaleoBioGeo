@@ -25,4 +25,5 @@ paleocoord <- function() {
 read_areas_allowed_fn()
 read_times_fn()
 read_distances_fn()
-tipranges()
+tipranges_to_area_strings()
+tipranges_to_tip_condlikes_of_data_on_each_state()
