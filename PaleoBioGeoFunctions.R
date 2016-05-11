@@ -6,6 +6,7 @@ library("PythonInR")
 
 locality.coord <- function(data) {
   # import locality coordinates to pygplates
+  # function to seek out unique coordinates
   # looks like I need to have a file in GMT format (can just use a .txt file and change suffix)
   
 }
