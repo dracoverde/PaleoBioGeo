@@ -7,7 +7,7 @@ species.locality.age <- read.csv("____PATH_TO_SPECIES_OCCURRENCE_DB____")
 # possible information that can be used in other anylses include sediment type, sedimentary environment, infered water depth, etc
 # In functions will reference the columns in the DB that refer to the needed data.
 # species  Locality_name  coordinates  min_age  max_age  
+paleocoord.saved.file <- read.csv("____PATH_TO_FILE_GENERATED_IN_PYGPLATES____")
 
-
-GetPaleoCoordinates <- paleocoord(species.locality.age[,3])
-PaleoBioGeo <- combine_tree_and_paleocoordinates (tree, )
+GetPaleoCoordinates <- paleocoord(species.locality.age)
+PaleoBioGeo <- combine_tree_and_paleocoordinates (tree, paleocoord.saved.file)
